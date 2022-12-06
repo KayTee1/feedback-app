@@ -28,13 +28,13 @@ const Statistics = (props) =>{
   }
   return (
     <div>
-      <StatisticLine text={'good'} value={props.good}/>
-      <StatisticLine text={'neutral'} value={props.neutral}/>
-      <StatisticLine text={'bad'} value={props.bad}/>
+      <StatisticLine text={'Good'} value={props.good}/>
+      <StatisticLine text={'Neutral'} value={props.neutral}/>
+      <StatisticLine text={'Bad'} value={props.bad}/>
 
-      <StatisticLine text={'all'} value={props.all}/>
-      <StatisticLine text={'average'} value={props.average}/>
-      <StatisticLine text={'positive'} value={props.positive}/>
+      <StatisticLine text={'All'} value={props.all}/>
+      <StatisticLine text={'Average'} value={props.average}/>
+      <StatisticLine text={'Positive'} value={props.positive}/>
     </div>
   )
 }
@@ -73,14 +73,14 @@ const App = () => {
 
   return (
     <div>
-      <Header headerContent={'give feedback'}/>
+      <Header headerContent={'Give Feedback!'}/>
       
-      <Button handleClick={handleGood} text={'good'}/>
-      <Button handleClick={handleNeutral} text={'neutral'}/>
-      <Button handleClick={handleBad} text={'bad'}/>
+      <Button handleClick={handleGood} text={'Good'}/>
+      <Button handleClick={handleNeutral} text={'Neutral'}/>
+      <Button handleClick={handleBad} text={'Bad'}/>
 
 
-      <Header headerContent={'statistics'}/>
+      <Header headerContent={'Statistics'}/>
 
       <Statistics 
         good={good}
